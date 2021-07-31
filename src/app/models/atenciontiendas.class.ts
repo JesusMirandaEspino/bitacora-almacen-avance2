@@ -5,7 +5,7 @@ import { Facturacion } from './facturacion.class';
 import { Ruta } from './jefeAlmacen';
 
 //Clase principal del llenado de informacion de la parte de Atencion a tiendas
-export class pedido {
+export class Pedido {
   id: Number;
   fecha: Date;
   fechaEntraga: Date;
@@ -21,7 +21,7 @@ export class pedido {
   domiclio: Domicilio;
 
   //  tienda origen sera un objeto con una lista de tiendas que seran consumidas de una base de datos, ingresadas y modificadas por un administrador
-  tiendaOrigen: String;
+  tiendaOrigen: TiendaOrigen;
   recibio: String;
   piezasSurtidas: Number;
   piezasrequeridas: Number;
@@ -53,4 +53,8 @@ class TipoPedido {
   paqueteria: String;
   almacen: String;
   recogeTienda: String;
+}
+
+class TiendaOrigen {
+  nombre: String;
 }
