@@ -4,16 +4,16 @@ export class Ruta {
 
   // Este es asignado preliminarmente por un administrador
 
-  Chofer: String;
+  chofer: Chofer;
   // Este es asignado preliminarmente por un administrador
-  copiloto: String;
+  copiloto: Copiloto;
 
   horaSalida: Date;
   horaLlegada: Date;
   horaReferencia: String;
 
   // Este es asignado preliminarmente por un administrador
-  unidad: String;
+  unidad: Unidad;
 
   kmSalida: String;
   kmEntrada: String;
@@ -21,4 +21,31 @@ export class Ruta {
   // El tipo de incidencia esta asignado de manera preliminar
   incidencia: String;
   anotaciones: String;
+}
+
+class Chofer {
+  nombre: String;
+  acumuladoHoras: Number;
+  aumuladoKm: Number;
+  acumuladoPedidos: Number;
+  acumuladoCantidad: Number;
+}
+
+class Unidad {
+  nombre: String;
+  acumuladoHoras: Number;
+  aumuladoKm: Number;
+  acumuladoPedidos: Number;
+  acumuladoCantidad: Number;
+  gastoGasolina: Number;
+
+  // Se agregara una subclase donde vendra el rendimiento de la unidad
+}
+
+class Copiloto {
+  nombre: String;
+  acumuladoHoras: Number;
+  aumuladoKm: Number;
+  acumuladoPedidos: Number;
+  acumuladoCantidad: Number;
 }

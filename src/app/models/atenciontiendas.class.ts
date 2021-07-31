@@ -6,6 +6,7 @@ import { Ruta } from './jefeAlmacen';
 
 //Clase principal del llenado de informacion de la parte de Atencion a tiendas
 export class pedido {
+  id: Number;
   fecha: Date;
   fechaEntraga: Date;
   nombreCliente: String;
